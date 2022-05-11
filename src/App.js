@@ -4,6 +4,9 @@ import About from './Pages/Aboute/Aboute';
 import AppoinmentPage from './Pages/AppoinmentPage/AppoinmentPage';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Shared/Footer/Footer';
+import Login from './Shared/Navber/Login/Login';
+import RequireAuth from './Shared/Navber/Login/RequireAuth';
+import SignUp from './Shared/Navber/Login/Signup';
 import Navber from './Shared/Navber/Navber';
 
 function App() {
@@ -14,9 +17,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="appoinment" element={<AppoinmentPage />} />
+        <Route path="appoinment" element={<RequireAuth><AppoinmentPage /></RequireAuth>} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
