@@ -5,32 +5,21 @@ import appoinmentbg from '../../../assets/images/appointment.png';
 
 const ContuctUs = () => {
     return (
-        // <div class="hero">
-        //     <div class="hero-overlay bg-opacity-60"></div>
-        //     <div class="hero-content text-center text-neutral-content">style="background-image: url(https://api.lorem.space/image/fashion?w=1000&h=800)"
-        //         <div class="max-w-md">
-        //             <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-
-        //             <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-        //             <button class="btn btn-primary">Get Started</button>
-        //         </div>
-        //     </div>
-        // </div>
-        <div style={{ backgroundImage: `url(${appoinmentbg})` }} class="hero py-16 mb-16">
-            <div class="bg-transparent card flex-shrink-0 w-full max-w-xl bg-base-100">
+        <div style={{ backgroundImage: `url(${appoinmentbg})` }} className="hero py-16 mb-16">
+            <div className="bg-transparent card flex-shrink-0 w-full max-w-xl bg-base-100">
                 <h3 className='text-xl font-bold text-center text-secondary'>Contact Us</h3>
                 <h2 className='text-3xl text-white font-bold text-center py-4'>Stay connected with us</h2>
-                <div class="card-body">
-                    <div class="form-control">
-                        <input type="text" placeholder="Email Address" class="input text-lg text-gray-500" />
+                <div className="card-body">
+                    <div className="form-control">
+                        <input type="text" placeholder="Email Address" className="input text-lg text-gray-500" />
                     </div>
-                    <div class="form-control mt-2">
-                        <input type="text" placeholder="Subject" class="input text-lg text-gray-500" />
+                    <div className="form-control mt-2">
+                        <input type="text" placeholder="Subject" className="input text-lg text-gray-500" />
                     </div>
-                    <div class="form-control mt-2">
-                        <textarea placeholder="Your message" class="input h-32 text-lg text-gray-500" />
+                    <div className="form-control mt-2">
+                        <textarea placeholder="Your message" className="input h-32 text-lg text-gray-500" />
                     </div>
-                    <div class="block mx-auto mt-5">
+                    <div className="block mx-auto mt-5">
                         <HomeBtn>Submit Now</HomeBtn>
                     </div>
                 </div>
