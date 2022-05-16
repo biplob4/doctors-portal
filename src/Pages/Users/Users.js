@@ -4,9 +4,9 @@ import Lodding from '../../Shared/Lodding';
 import UsresRow from './UsresRow';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/users',{
-        method : "GET",
-        headers:{
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://quiet-brook-43613.herokuapp.com/users', {
+        method: "GET",
+        headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
     }).then(res => res.json()));

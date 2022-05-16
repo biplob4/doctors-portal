@@ -9,13 +9,13 @@ const AvailableAppoinment = ({ selected }) => {
     // const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState(null);
     const formattaedDate = format(selected, "PP");
-    const { data: services, isLoading, refetch } = useQuery(['available', formattaedDate], () => fetch(`http://localhost:5000/available?date=${formattaedDate}`).then(res => res.json()))
+    const { data: services, isLoading, refetch } = useQuery(['available', formattaedDate], () => fetch(`https://quiet-brook-43613.herokuapp.com/available?date=${formattaedDate}`).then(res => res.json()))
 
     if (isLoading) {
         return <Lodding />
     }
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/available?date=${formattaedDate}`)
+    //     fetch(`https://quiet-brook-43613.herokuapp.com/available?date=${formattaedDate}`)
     //         .then(res => res.json())
     //         .then(data => setServices(data));
     // }, [formattaedDate])
