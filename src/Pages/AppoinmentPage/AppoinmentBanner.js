@@ -8,7 +8,7 @@ const AppoinmentBanner = ({selected, setSelected}) => {
     return (
         <div style={{backgroundImage:`url(${homeBg})`,backgroundSize:"cover",backgroundPosition:"center"}} className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse gap-32 p-5">
-                <img src={banner} className="max-w-xl rounded-lg shadow-2xl" alt='Appoinment img' />
+                <img src={banner} className="w-full md:max-w-lg rounded-lg shadow-2xl" alt='Appoinment img' />
                 <div>
                     <DayPicker 
                         className='shadow-md p-5 rounded-xl'
