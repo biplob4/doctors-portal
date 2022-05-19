@@ -4,10 +4,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import About from './Pages/Aboute/Aboute';
 import AppoinmentPage from './Pages/AppoinmentPage/AppoinmentPage';
+import AddDoctor from './Pages/Dashboard/AddDoctor';
 import Dashbord from './Pages/Dashboard/Dashbord';
 import History from './Pages/Dashboard/History';
+import ManageDoctor from './Pages/Dashboard/ManageDoctor';
 import MyAppoinment from './Pages/Dashboard/MyAppoinment';
 import MyReview from './Pages/Dashboard/MyReview';
+import Payment from './Pages/Dashboard/Payment';
 import Home from './Pages/Home/Home/Home';
 import Users from './Pages/Users/Users';
 import Footer from './Shared/Footer/Footer';
@@ -31,7 +34,10 @@ function App() {
           <Route index element={<MyAppoinment />}></Route>
           <Route path="review" element={<MyReview />}></Route>
           <Route path="history" element={<History />}></Route>
+          <Route path="payment/:id" element={<Payment />}></Route>
           <Route path="users" element={<RequireAdmin><Users /></RequireAdmin>}></Route>
+          <Route path="addDoctor" element={<RequireAdmin><AddDoctor /></RequireAdmin>}></Route>
+          <Route path="manageDoctor" element={<RequireAdmin><ManageDoctor /></RequireAdmin>}></Route>
         </Route>
 
 
